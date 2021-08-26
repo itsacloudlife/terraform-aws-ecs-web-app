@@ -3,48 +3,48 @@
 ###################
 
 output "ecr" {
-  value       = module.ecr
+  value       = module.web_app.ecr
   description = "All outputs from `module.ecr`"
 }
 
 output "ecr_registry_id" {
-  value       = module.ecr.registry_id
+  value       = module.web_app.ecr_registry_id
   description = "Registry ID"
 }
 
 output "ecr_registry_url" {
-  value       = module.ecr.repository_url
+  value       = module.web_app.ecr_registry_url
   description = "Repository URL"
 }
 
 output "ecr_repository_url" {
-  value       = module.ecr.repository_url
+  value       = module.web_app.ecr_repository_url
   description = "Repository URL"
 }
 
 output "ecr_repository_name" {
-  value       = module.ecr.repository_name
+  value       = module.web_app.ecr_repository_name
   description = "Registry name"
 }
 
 output "ecr_repository_arn" {
-  value       = module.ecr.repository_arn
+  value       = module.web_app.ecr_repository_arn
   description = "ARN of ECR repository"
 }
 
 output "alb_ingress" {
   description = "All outputs from `module.alb_ingress`"
-  value       = module.alb_ingress
+  value       = module.web_app.alb_ingress
 }
 
 output "alb_ingress_target_group_name" {
   description = "ALB Target Group name"
-  value       = module.alb_ingress.target_group_name
+  value       = module.web_app.alb_ingress_target_group_name
 }
 
 output "alb_ingress_target_group_arn" {
   description = "ALB Target Group ARN"
-  value       = module.alb_ingress.target_group_arn
+  value       = module.web_app.alb_ingress_target_group_arn
 }
 
 output "alb_ingress_target_group_arn_suffix" {
