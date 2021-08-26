@@ -1,6 +1,6 @@
 
-module "ui-v2-alb" {
-  source                                                = "cloudposse/alb/aws"
+module "web_app" {
+  source                                                = "cloudposse/ecs-web-app/aws"
   version                                               = "0.65.2"
 
   # keeping inputs in the same order as the variables 
