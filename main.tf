@@ -154,7 +154,7 @@ module "web_app" {
   cloudwatch_log_group_enabled                          = var.cloudwatch_log_group_enabled
   alb_container_name                                    = var.alb_container_name
   nlb_container_name                                    = var.nlb_container_name
-  deployment_controller_controller_type                 = var.deployment_controller_controller_type
+  deployment_controller_type                            = var.deployment_controller_type
   ecr_image_tag_mutability                              = var.ecr_image_tag_mutability
   force_new_deployment                                  = var.force_new_deployment
   exec_enabled                                          = var.exec_enabled
