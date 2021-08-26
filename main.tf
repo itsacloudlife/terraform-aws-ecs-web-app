@@ -1,8 +1,9 @@
 
 module "ui-v2-alb" {
   source                                                = "cloudposse/alb/aws"
-  version                                               = "0.35.3"
-  
+  version                                               = "0.65.2"
+
+  # keeping inputs in the same order as the variables 
   namespace                                             = var.namespace
   stage                                                 = var.stage
   name                                                  = var.name

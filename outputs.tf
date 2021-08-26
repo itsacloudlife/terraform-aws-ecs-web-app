@@ -1,3 +1,7 @@
+###################
+# Wrapper Outputs #
+###################
+
 output "ecr" {
   value       = module.ecr
   description = "All outputs from `module.ecr`"
