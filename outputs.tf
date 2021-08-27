@@ -154,7 +154,7 @@ output "ecs_task_definition_revision" {
 
 output "codebuild" {
   description = "All outputs from `module.ecs_codepipeline`"
-  value       = module.web_app.ecs_codepipeline
+  value       = module.web_app.codebuild
   sensitive   = true
 }
 
