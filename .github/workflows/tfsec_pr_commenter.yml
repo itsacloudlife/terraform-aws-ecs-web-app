@@ -13,7 +13,7 @@ jobs:
         uses: reviewdog/action-tfsec@master
         with:
           github_token: ${{ secrets.github_token }}
-          working_directory: my_directory # Change working directory
+          working_directory: / # Change working directory
           level: info # Get more output from reviewdog
           reporter: github-pr-review # Change reviewdog reporter
           filter_mode: nofilter # Check all files, not just the diff
