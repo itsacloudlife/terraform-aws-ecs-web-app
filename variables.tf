@@ -1,4 +1,15 @@
 
+########################
+# Additional Variables #
+########################
+
+variable "additional_task_permissions" {
+  type        = list(any)
+  description = "Additional values to add to the task role" #UPDATE I didn't see another way to do this. 
+  default     = []
+}
+
+
 
 #####################
 # Wrapper Variables #
@@ -57,7 +68,7 @@ variable "container_repo_credentials" {
 variable "ecr_scan_images_on_push" {
   type        = bool
   description = "Indicates whether images are scanned after being pushed to the repository (true) or not (false)"
-  default     = false
+  default     = true #UPDATE: IMO this should be default
 }
 
 variable "container_cpu" {
@@ -1010,8 +1021,5 @@ variable "enable_ecs_managed_tags" {
 
 
 
-########################
-# Additional Variables #
-########################
 
 
